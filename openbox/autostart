@@ -1,0 +1,11 @@
+# Compositor
+exec compton &
+
+# Set wallpaper
+nitrogen --restore
+
+# Context menu
+mmaker openbox -t xterm -f
+
+# Dock
+plank &
