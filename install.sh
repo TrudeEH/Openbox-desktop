@@ -2,7 +2,11 @@
 
 # Install required packages:
 
+# Display manager (test only)
+sudo apt install -y lightdm
+
 # APT packages
+sudo apt update
 sudo apt install -y openbox nitrogen plank xterm g++ make 2>/dev/null
 # PACMAN packages
 sudo pacman -S -y openbox nitrogen plank xterm g++ pycom make 2>/dev/null
@@ -17,6 +21,9 @@ sudo make install
 cd ..
 
 # -----------------------------------
+# Configure GTK+ 2.0
+cp ./.gtkrc-2.0 ~
+
 # Configure Openbox
 mkdir ~/.config/openbox 2>/dev/null
 cp ./openbox/autostart ~/.config/openbox 2>/dev/null
