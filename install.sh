@@ -30,7 +30,4 @@ cd Tela-circle-icon-theme ; ./install.sh ; cd .. ; rm -rf Tela-circle-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dark' # Apply the theme
 
 # Install Frost Plank Theme
-cd frost-plank-theme
-./install.sh
-cd ..
-
+sudo cp ./frost-plank-theme/dock.theme /usr/share/plank/themes/Default/
