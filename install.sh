@@ -7,7 +7,7 @@ sudo apt install -y lightdm
 
 # APT packages
 sudo apt update
-sudo apt install -y openbox nitrogen plank xterm g++ make 2>/dev/null
+sudo apt install -y xorg openbox nitrogen plank xterm g++ make 2>/dev/null
 # PACMAN packages
 sudo pacman -S -y openbox nitrogen plank xterm g++ pycom make 2>/dev/null
 # Install compton/pyCom
@@ -24,6 +24,9 @@ cd ..
 # Configure GTK+ 2.0/3.0
 cp ./.gtkrc-2.0 ~
 cp ./.gtkrc-3.0 ~
+
+# Configure XTerm
+cp ./.Xresources ~
 
 # Configure Openbox
 mkdir ~/.config/openbox 2>/dev/null
