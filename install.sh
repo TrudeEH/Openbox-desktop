@@ -21,8 +21,9 @@ sudo make install
 cd ..
 
 # -----------------------------------
-# Configure GTK+ 2.0
+# Configure GTK+ 2.0/3.0
 cp ./.gtkrc-2.0 ~
+cp ./.gtkrc-3.0 ~
 
 # Configure Openbox
 mkdir ~/.config/openbox 2>/dev/null
